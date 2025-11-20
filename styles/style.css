@@ -74,6 +74,7 @@
 }
 
 .header__subtitle {
+  text-transform: uppercase;
   font-size: var(
     --header-subtitle-font-size,
     clamp(0.875rem, 0.3819rem + 2.4129vw, 1.4375rem)
@@ -130,6 +131,7 @@
 
 @supports (-webkit-text-stroke: 1px white) or (text-stroke: 1px white) {
   .content__label {
+    text-shadow: none;
     -webkit-text-stroke: 1px white;
     text-stroke: 1px white;
   }
@@ -332,6 +334,7 @@
 }
 
 .button-dialog-save {
+  text-transform: uppercase;
   inline-size: 100%;
 }
 
@@ -350,7 +353,7 @@
     block-size: 28px;
   }
 
-  .dialog-save {
+  .dialog-save[open] {
     max-inline-size: 341px;
     padding-inline: 40px;
   }
